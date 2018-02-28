@@ -3,7 +3,7 @@ using UIKit;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
-using IOSPrj.Views;
+using OpenGLDemo;
 
 namespace IOSPrj
 {
@@ -36,9 +36,9 @@ namespace IOSPrj
 		        TextColor = UIColor.Black
 		    });
 
-		    var phonewordPage = new PhonewordPage();
-		    var mainPage = phonewordPage.CreateViewController();
-		    mainPage.Title = "Phoneword";
+		    var openGLViewPage = new OpenGlTutoTextured();
+		    var mainPage = openGLViewPage.CreateViewController();
+		    mainPage.Title = "Open GL Demo";
 
 		    _navigation = new UINavigationController(mainPage);
 		    Window.RootViewController = _navigation;
@@ -46,13 +46,7 @@ namespace IOSPrj
 
 		    return true;
         }
-
-	    public void NavigateToCallHistoryPage()
-	    {
-	        var callHistoryPage = new CallHistoryPage().CreateViewController();
-	        callHistoryPage.Title = "Call History";
-	        _navigation.PushViewController(callHistoryPage, true);
-	    }
+	    
 	}
 }
 

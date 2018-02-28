@@ -7,9 +7,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidPrj", "AndroidPrj\An
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSPrj", "IOSPrj\IOSPrj.csproj", "{845AE8B0-3164-4AE0-8958-C2985324A549}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UWPPrj", "UWPPrj\UWPPrj.csproj", "{9D687275-1976-4473-BFEB-7FAA90E2E7C6}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "OpenGLDemo", "OpenGLDemo\OpenGLDemo.shproj", "{B7DD8B60-20D3-4C2B-AFB6-3446B564B37C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{7C6A53D5-1160-4FFB-92CE-1302C84FACF0}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		OpenGLDemo\OpenGLDemo.projitems*{09d17f4a-368e-4dc2-86af-ce5409228a7c}*SharedItemsImports = 4
+		OpenGLDemo\OpenGLDemo.projitems*{845ae8b0-3164-4ae0-8958-c2985324a549}*SharedItemsImports = 4
+		OpenGLDemo\OpenGLDemo.projitems*{b7dd8b60-20d3-4c2b-afb6-3446b564b37c}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
@@ -77,33 +84,12 @@ Global
 		{845AE8B0-3164-4AE0-8958-C2985324A549}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{845AE8B0-3164-4AE0-8958-C2985324A549}.Release|x64.ActiveCfg = Release|iPhoneSimulator
 		{845AE8B0-3164-4AE0-8958-C2985324A549}.Release|x86.ActiveCfg = Release|iPhoneSimulator
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Debug|ARM.ActiveCfg = Debug|ARM
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Debug|ARM.Build.0 = Debug|ARM
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Debug|ARM.Deploy.0 = Debug|ARM
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Debug|iPhone.ActiveCfg = Debug|x86
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Debug|iPhoneSimulator.ActiveCfg = Debug|x86
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Debug|x64.ActiveCfg = Debug|x64
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Debug|x64.Build.0 = Debug|x64
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Debug|x64.Deploy.0 = Debug|x64
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Debug|x86.ActiveCfg = Debug|x86
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Debug|x86.Build.0 = Debug|x86
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Debug|x86.Deploy.0 = Debug|x86
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Release|Any CPU.ActiveCfg = Release|x86
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Release|ARM.ActiveCfg = Release|ARM
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Release|ARM.Build.0 = Release|ARM
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Release|ARM.Deploy.0 = Release|ARM
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Release|iPhone.ActiveCfg = Release|x86
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Release|iPhoneSimulator.ActiveCfg = Release|x86
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Release|x64.ActiveCfg = Release|x64
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Release|x64.Build.0 = Release|x64
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Release|x64.Deploy.0 = Release|x64
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Release|x86.ActiveCfg = Release|x86
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Release|x86.Build.0 = Release|x86
-		{9D687275-1976-4473-BFEB-7FAA90E2E7C6}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B7DD8B60-20D3-4C2B-AFB6-3446B564B37C} = {7C6A53D5-1160-4FFB-92CE-1302C84FACF0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A7019A7F-16C0-4549-9DBC-4E861E7FEBB3}

@@ -3634,6 +3634,9 @@ namespace AndroidPrj
 			// aapt resource value: 0x7f030000
 			public const int icon = 2130903040;
 			
+			// aapt resource value: 0x7f030001
+			public const int mario = 2130903041;
+			
 			static Mipmap()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

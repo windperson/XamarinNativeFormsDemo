@@ -3,7 +3,7 @@ using Android.Content.PM;
 using Android.Widget;
 using Android.OS;
 using Android.Support.V7.App;
-using AndroidPrj.Views;
+using OpenGLDemo;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
@@ -26,43 +26,19 @@ namespace AndroidPrj
             SetContentView(Resource.Layout.Main);
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
-            SupportActionBar.Title = "Phoneword";
+            SupportActionBar.Title = "OpenGL Demo";
 
-            var phonewordPage = new PhonewordPage();
-            var mainPage = phonewordPage.CreateFragment(this);
+            var openGLViewPage = new OpenGlTutoTextured();
+            var mainPage = openGLViewPage.CreateFragment(this);
             FragmentManager
                 .BeginTransaction()
                 .Replace(Resource.Id.fragment_frame_layout, mainPage)
                 .Commit();
 
-            FragmentManager.BackStackChanged += (sender, e) =>
-            {
-                bool hasBack = FragmentManager.BackStackEntryCount > 0;
-                SupportActionBar.SetHomeButtonEnabled(hasBack);
-                SupportActionBar.SetDisplayHomeAsUpEnabled(hasBack);
-                SupportActionBar.Title = hasBack ? "Call History" : "Phoneword";
-            };
-        }
 
-        public override bool OnOptionsItemSelected(Android.Views.IMenuItem item)
-        {
-            if (item.ItemId == global::Android.Resource.Id.Home && FragmentManager.BackStackEntryCount > 0)
-            {
-                FragmentManager.PopBackStack();
-                return true;
-            }
-            return base.OnOptionsItemSelected(item);
+            
         }
-
-        public void NavigateToCallHistoryPage()
-        {
-            var callHistoryPage = new CallHistoryPage().CreateFragment(this);
-            FragmentManager
-                .BeginTransaction()
-                .AddToBackStack(null)
-                .Replace(Resource.Id.fragment_frame_layout, callHistoryPage)
-                .Commit();
-        }
+        
     }
 }
 
