@@ -10,7 +10,7 @@ using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace AndroidPrj
 {
-    [Activity(Label = "AndroidPrj", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "Native Forms OpenGLView", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : AppCompatActivity
     {
         public static MainActivity Instance;
