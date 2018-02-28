@@ -26,7 +26,6 @@ namespace UWPPrj
     {
         public static MainPage Instance;
 
-
         public MainPage()
         {
             this.InitializeComponent();
